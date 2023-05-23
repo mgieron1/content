@@ -1,7 +1,3 @@
-import { join } from "path";
-
-const postsDirectory = join(process.cwd(), "_posts");
-
 export async function getPostBySlug(slug: string, fields: string[] = []) {
   const apiUrl =
     "https://verzeichnis.digital/api/get.php?type=one&table=solar&slug=" + slug;
