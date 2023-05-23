@@ -29,6 +29,16 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
+          {process.env.ADSENSE_ID && (
+            <script
+              async
+              src={
+                "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" +
+                process.env.ADSENSE_ID
+              }
+              crossorigin="anonymous"
+            ></script>
+          )}
           <title>{process.env.HOME_TITLE}</title>
           <meta
             name="robots"

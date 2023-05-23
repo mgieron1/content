@@ -11,6 +11,7 @@ module.exports = {
     INDEX_INTRO_TITLE2: process.env.INDEX_INTRO_TITLE2,
     ROBOTS_INDEX: process.env.ROBOTS_INDEX,
     ALERT_TEXT: process.env.ALERT_TEXT,
+    ADSENSE_ID: process.env.ADSENSE_ID,
   },
   images: {
     domains: ["images.pexels.com", "cdn.pixabay.com"],

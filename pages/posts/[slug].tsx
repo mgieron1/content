@@ -46,6 +46,16 @@ export default function Post({ post, preview }: Props) {
             <article className="mb-32">
               <Head>
                 <title>{title.replace("<b>", "").replace("</b>", "")}</title>
+                {process.env.ADSENSE_ID && (
+                  <script
+                    async
+                    src={
+                      "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" +
+                      process.env.ADSENSE_ID
+                    }
+                    crossorigin="anonymous"
+                  ></script>
+                )}
               </Head>
               <PostTitle>
                 <div
