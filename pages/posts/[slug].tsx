@@ -53,7 +53,7 @@ export default function Post({ post, preview }: Props) {
                       "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" +
                       process.env.ADSENSE_ID
                     }
-                    crossorigin="anonymous"
+                    crossOrigin="anonymous"
                   ></script>
                 )}
               </Head>
