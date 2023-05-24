@@ -36,7 +36,7 @@ export default function Index({ allPosts }: Props) {
                 "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" +
                 process.env.ADSENSE_ID
               }
-              crossorigin="anonymous"
+              crossOrigin="anonymous"
             ></script>
           )}
           <title>{process.env.HOME_TITLE}</title>
