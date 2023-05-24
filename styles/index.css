@@ -74,12 +74,12 @@ body {
 }
 
 body.wärmepumpe {
-  background-image: url("/assets/wp2.jpg");
+  background-image: url("/assets/wp2.jpg") !important;
   background-position: bottom left;
 }
 
 body.solar {
-  background-image: url("/assets/solar2.jpg");
+  background-image: url("/assets/solar2.jpg") !important;
   background-position: bottom center;
 }
 
