@@ -162,6 +162,13 @@ h4 {
   text-decoration: none;
   flex-direction: column;
   text-align: center;
+  position: relative;
+  padding-left: 20px;
+}
+
+.erstehilfe .article-para-a {
+  background-color: red;
+  color: black;
 }
 
 .article-para-a:after {
@@ -175,8 +182,12 @@ h4 {
   padding-right: 7px;
 }
 
+.erstehilfe .blogtitle1 span,
+.erstehilfe .blogtitle2 span {
+  background-color: red;
+}
+
 .blogtitle2 span {
-  background-color: yellow;
   color: #000;
   padding-right: 0px;
 }
@@ -233,6 +244,10 @@ h4 {
 #footera a {
   background-color: yellow;
   padding: 3px 5px;
+}
+
+.erstehilfe #footera a {
+  background-color: red;
 }
 
 #footera a:after {
