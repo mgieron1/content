@@ -16,6 +16,7 @@ module.exports = {
     BG_IMAGE: process.env.BG_IMAGE,
     DESKTOP_ARTICLE_AD_LEFT: process.env.DESKTOP_ARTICLE_AD_LEFT,
     DESKTOP_ARTICLE_AD_RIGHT: process.env.DESKTOP_ARTICLE_AD_RIGHT,
+    WEBMASTERTOOLS: process.env.WEBMASTERTOOLS,
   },
   images: {
     domains: ["images.pexels.com", "cdn.pixabay.com"],

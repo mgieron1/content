@@ -29,6 +29,12 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
+          {process.env.WEBMASTERTOOLS && (
+            <meta
+              name="google-site-verification"
+              content={process.env.WEBMASTERTOOLS}
+            />
+          )}
           {process.env.ADSENSE_ID && (
             <script
               async
