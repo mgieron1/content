@@ -13,6 +13,7 @@ module.exports = {
     ALERT_TEXT: process.env.ALERT_TEXT,
     ADSENSE_ID: process.env.ADSENSE_ID,
     WEBSITE: process.env.WEBSITE,
+    BG_IMAGE: process.env.BG_IMAGE,
   },
   images: {
     domains: ["images.pexels.com", "cdn.pixabay.com"],

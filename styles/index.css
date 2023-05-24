@@ -67,7 +67,6 @@ article p {
 }
 
 body {
-  background-image: url("/assets/home-small.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="de">
       <Head />
-      <body>
+      <body style={{ backgroundImage: "url(" + process.env.BG_IMAGE + ")" }}>
         <Main />
         <NextScript />
       </body>
