@@ -1,6 +1,9 @@
 export async function getPostBySlug(slug: string, fields: string[] = []) {
   const apiUrl =
-    "https://verzeichnis.digital/api/get.php?type=one&table=solar&slug=" + slug;
+    "https://verzeichnis.digital/api/get.php?type=one&table=solar&slug=" +
+    slug +
+    "&website=" +
+    process.env.WEBSITE;
 
   return await getDataFromAPI(apiUrl)
     .then((data) => {
@@ -15,7 +18,9 @@ export async function getPostBySlug(slug: string, fields: string[] = []) {
 export async function search(search: string) {
   const apiUrl =
     "https://verzeichnis.digital/api/get.php?type=search&table=solar&search=" +
-    search;
+    search +
+    "&website=" +
+    process.env.WEBSITE;
 
   return await getDataFromAPI(apiUrl)
     .then((data) => {
@@ -29,22 +34,8 @@ export async function search(search: string) {
 
 export async function getAllPosts() {
   const apiUrl =
-    "https://verzeichnis.digital/api/get.php?type=list&table=solar";
-
-  return await getDataFromAPI(apiUrl)
-    .then((data) => {
-      return data;
-    })
-    .catch((error) => {
-      console.error("Fehler beim Abrufen der Daten:", error);
-      return [];
-    });
-}
-
-export async function getTopPosts(count: number = 5) {
-  const apiUrl =
-    "https://verzeichnis.digital/api/get.php?type=top&table=solar&count=" +
-    count;
+    "https://verzeichnis.digital/api/get.php?type=list&table=solar&website=" +
+    process.env.WEBSITE;
 
   return await getDataFromAPI(apiUrl)
     .then((data) => {
