@@ -44,6 +44,10 @@ export default function Index({ allPosts }: Props) {
             name="robots"
             content={process.env.ROBOTS_INDEX || "index,follow"}
           />
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+          />
         </Head>
         <Container>
           <Intro />

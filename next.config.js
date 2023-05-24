@@ -14,6 +14,8 @@ module.exports = {
     ADSENSE_ID: process.env.ADSENSE_ID,
     WEBSITE: process.env.WEBSITE,
     BG_IMAGE: process.env.BG_IMAGE,
+    DESKTOP_ARTICLE_AD_LEFT: process.env.DESKTOP_ARTICLE_AD_LEFT,
+    DESKTOP_ARTICLE_AD_RIGHT: process.env.DESKTOP_ARTICLE_AD_RIGHT,
   },
   images: {
     domains: ["images.pexels.com", "cdn.pixabay.com"],
