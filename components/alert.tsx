@@ -10,12 +10,7 @@ const Alert = () => {
         "bg-neutral-50 border-neutral-200": !preview,
       })}
     >
-      <Container>
-        <div
-          className="py-2 text-center text-sm"
-          dangerouslySetInnerHTML={{ __html: process.env.ALERT_TEXT || "" }}
-        ></div>
-      </Container>
+      <Container></Container>
     </div>
   );
 };
